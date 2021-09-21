@@ -1,0 +1,357 @@
+#app 
+{
+    background: rgb(26,61,61);
+    background: linear-gradient(0deg, rgba(26,61,61,1) 0%, rgba(25,193,195,1) 100%);
+    height: 100vh;
+    width: 100vw;
+
+}
+.spin {
+    animation: MoveSpins 5s infinite;
+    /* background: rgb(48,11,11);
+    background: linear-gradient(90deg, rgba(48,11,11,1) 0%, rgba(191,24,24,1) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%); */
+    transform:rotate(60deg);
+}
+.spin2 {
+    animation: circle 7s;
+}
+/* ANIMATION SOM KOMMER NED FRA SKJERMEN eller lignende. SKAL STÅ "CSS? EASY PEASY!" */
+
+.rød {
+    background: linear-gradient(90deg, rgba(48,11,11,1) 0%, rgba(191,24,24,1) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    width: 320px;
+    height: 320px;
+    /* clip: rect(0px,369px,498px,0px); */
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+.blå {
+    background: linear-gradient(90deg, rgba(12,116,198,1) 0%, rgba(13,203,73,1) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    width: 320px;
+    height: 320px;
+    /* clip: rect(0px,369px,498px,0px); */
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+.grønn {
+    background: linear-gradient(90deg, rgba(13,203,73,1) 0%, rgb(134, 255, 172) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    width: 320px;
+    height: 320px;
+    clip: rect(0px,369px,498px,0px);
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+.gul {
+    background: linear-gradient(90deg, rgb(255, 251, 0) 0%, rgb(255, 253, 163) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    width: 320px;
+    height: 320px;
+    /* clip: rect(0px,369px,498px,0px); */
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+.lilla
+{
+    background: linear-gradient(90deg, rgb(49, 0, 77) 0%, rgb(143, 0, 226) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    width: 320px;
+    height: 320px;
+    /* clip: rect(0px,369px,498px,0px); */
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+.svart 
+{
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(70, 70, 70, 0.947) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    color: white;
+    width: 320px;
+    height: 320px;
+    /* clip: rect(0px,369px,498px,0px); */
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+}
+
+
+.hold 
+{
+    position: absolute;
+    width: 368px;
+    height: 495px;
+    clip: rect(0px,233px,204px,0px);
+    left: 217px;
+    top: 12%;
+    text-align: center;
+}
+
+
+
+/* .hold {
+    position:absolute;
+    width:200px;
+    height:200px;
+    clip:rect(0px,200px,200px,100px);
+    left:300px;
+} */
+
+
+
+/* .circleContainer 
+{
+    height: 100px;
+    width: 100px;
+    float: right;
+    margin: 0 0 20px 20px;
+} */
+
+.hold2 
+{
+    
+    width: 320px;
+    height: 320px;
+    clip: rect(0px,369px,498px,0px);
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+    line-height: 300px;
+    background-color: rgb(255, 0, 0);
+   
+}
+.hold3 
+{
+
+    width: 320px;
+    height: 320px;
+    clip: rect(0px,369px,498px,0px);
+    left: 243px;
+    top: 21.3%;
+    text-align: center;
+   
+    animation: BigButton 10s infinite;
+   
+}
+
+marquee
+{
+    color: hotpink;
+    font-size: large;
+    text-shadow: 1px 1px 1px whitesmoke;
+    width: 210px;
+    height: 187px;
+    position: relative;
+    top: 7vh;
+    line-height: 175%;
+   
+}
+
+@keyframes BigButton {
+    0% {background-color: red;}
+    25% {background-color: blue;}
+    50% {background-color: green;}
+    75% {background-color: yellow;}
+    99% {background-color: purple;}
+    100% {background-color: black;}
+}
+
+#discoBall 
+{
+    background-image: url("discoBall.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bigBtn
+{
+    
+    position: absolute;
+    /* height: 51vh;
+    width: 40vw; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 63%;
+}
+
+#bigBtnDiv {
+    overflow: hidden;
+    /* vertical-align: ; */
+    bottom: 0;
+    /* line-height: 50px; */
+    text-align: center;
+
+    
+    transform: translateY(0%);
+    animation: example3 65s linear;
+   
+}
+
+@-moz-keyframes example3 {
+    100%   { -moz-transform: translateY(0%); }
+    0% { -moz-transform: translateY(100%); }
+   }
+   @-webkit-keyframes example3 {
+    0%   { -webkit-transform: translateY(0%); }
+    100% { -webkit-transform: translateY(100%); }
+   }
+   @keyframes example3 {
+    0%   { 
+    -moz-transform: translateY(0%); /* Firefox bug fix */
+    -webkit-transform: translateY(-100%); /* Firefox bug fix */
+    transform: translateY(-50%); 		
+    }
+    100% { 
+    -moz-transform: translateY(100%); /* Firefox bug fix */
+    -webkit-transform: translateY(100%); /* Firefox bug fix */
+    transform: translateY(100%); 
+    }
+   }
+
+
+
+.ruter
+{
+    
+    position:absolute;
+   
+    /*  width:100px;
+    height:200px;
+    border-radius:100px 0 0 100px;
+    transform-origin:right center; */
+    width:200px;
+    height:200px;
+  
+    border-radius:100px; 
+}
+
+.ruter2
+{
+
+    position:absolute;
+    /*  width:100px;
+    height:200px;
+    border-radius:100px 0 0 100px;
+    transform-origin:right center; */
+    width:200px;
+    height:200px;
+    /* clip: rect(0px,140px,200px,0px); */
+    border-radius:100px; 
+}
+
+
+
+#rute1 .ruter 
+{
+    
+    background: rgb(48,11,11);
+    background: linear-gradient(90deg, rgba(48,11,11,1) 0%, rgba(191,24,24,1) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+@keyframes circle {
+    from {-webkit-transform: rotateZ(90deg)}
+    to {-webkit-transform: rotateZ(424deg)}
+}
+
+@keyframes MoveSpins 
+{
+    0% {
+        top: 0px;
+        clip: rect;
+    }
+    25% {
+        top: 140px; 
+        clip: rect(0px,427px,342px,0px);
+    }
+    
+    50% {
+        top: -15px;
+        clip: rect(0px,187px,111px,0px)
+    }
+
+    75% {
+        top: 100px;
+        clip: rect(0px,-95px,201px,0px);
+    }
+    
+    /* 85% {
+        top: 100px;
+        clip: rect(0px,-95px,101px,0px);
+    } */
+    
+    100% {
+        top: 0px;
+        clip: rect(0px,195px,198px,0px);
+        /* clip: rect(0px,195px,172px,0px); */
+    }
+}
+#rute2
+{
+    
+    transform:rotate(60deg);
+}
+#rute2 .ruter 
+{
+    /* animation: circle 5s; */
+    background: rgb(12,116,198);
+    background: linear-gradient(90deg, rgba(12,116,198,1) 0%, rgba(13,203,73,1) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+
+
+#rute3
+{
+    
+    transform:rotate(120deg);
+}
+#rute3 .ruter 
+
+{
+    /* animation: circle 5s; */
+    background: rgb(13,203,73);
+    background: linear-gradient(90deg, rgba(13,203,73,1) 0%, rgb(134, 255, 172) 100%, rgba(20,64,208,1) 100%, rgba(0,0,0,0.6082808123249299) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+
+#rute4
+{
+    
+    transform:rotate(180deg);
+}
+#rute4 .ruter 
+{
+    /* animation: circle 5s; */
+    background: rgb(255,172,4);
+    background: linear-gradient(90deg, rgb(255, 251, 0) 0%, rgb(255, 253, 163) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+
+#rute5
+{
+    
+    transform:rotate(240deg);
+}
+#rute5 .ruter 
+{
+    /* animation: circle 5s; */
+    background: rgb(49, 0, 77);
+    background: linear-gradient(90deg, rgb(49, 0, 77) 0%, rgb(143, 0, 226) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+
+#rute6
+{
+    transform:rotate(300deg);
+}
+#rute6 .ruter 
+{
+    /* animation: circle 5s; */
+    background: rgb(0, 0, 0);
+    color: white;
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(70, 70, 70, 0.947) 100%, rgba(1,255,0,0.5606617647058824) 100%, rgba(46,9,121,1) 100%, rgba(25,63,201,1) 100%);
+    transform:rotate(60deg);
+}
+
+
+
